@@ -19,6 +19,6 @@ int _putchar(char c)
  */
 int args_s(char *s)
 {
-    write(1, s, strlen(s));
-    return (strlen(s));
+	write(1, s, strlen(s));
+	return (strlen(s));
 }

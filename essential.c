@@ -6,24 +6,24 @@
  */
 void print_int(int n)
 {
-    unsigned int n1;
+	unsigned int n1;
 
-    if (n < 0)
-    {
-        n1 = -n;
-        _putchar('-');
-    }
-    else
-    {
-        n1 = n;
-    }
+	if (n < 0)
+	{
+		n1 = -n;
+		_putchar('-');
+	}
+	else
+	{
+		n1 = n;
+	}
 
-    if (n1 / 10)
-    {
-        print_int(n1 / 10);
-    }
+	if (n1 / 10)
+	{
+		print_int(n1 / 10);
+	}
 
-    _putchar((n1 % 10) + '0');
+	_putchar((n1 % 10) + '0');
 }
 
 
@@ -34,30 +34,30 @@ void print_int(int n)
  */
 int count_int(int n)
 {
-    int temp = n;
-    int count = 0;
+	int temp = n;
+	int count = 0;
 
-    print_int(n);
-    
-    if (temp < 0)
-    {
-        count++;
-        temp = -n;
-    }
+	print_int(n);
 
-    while(1)
-    {
-        if (temp > 10)
-        {
-            temp = (temp / 10);
-            count++;
-        }
-        else
-            break;
-    }
-    
+	if (temp < 0)
+	{
+		count++;
+		temp = -n;
+	}
 
-    return (count + 1);
+	while (1)
+	{
+		if (temp > 10)
+		{
+			temp = (temp / 10);
+			count++;
+		}
+		else
+			break;
+	}
+
+
+	return (count + 1);
 }
 
 
@@ -69,7 +69,7 @@ int count_int(int n)
  */
 int args_c(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 
-    return(1);
+	return (1);
 }
