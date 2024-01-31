@@ -34,9 +34,6 @@ int _printf(const char *format, ...)
 				word_count += args_c(va_arg(arg_list, int));
 			else if ((format[i] == 'd') || (format[i] == 'i'))
 				word_count += count_int(va_arg(arg_list, int));
-            else
-                write(1, &format[i], 1);
-			    word_count++;
 		}
 		i++;
 	}
