@@ -11,7 +11,6 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-
 /**
  * args_s - prints the str to the stdout
  * @s: string to be printed

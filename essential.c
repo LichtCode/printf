@@ -26,7 +26,6 @@ void print_int(int n)
 	_putchar((n1 % 10) + '0');
 }
 
-
 /**
  * count_int - counts number integers printed
  * @n: integer to be printed
@@ -59,8 +58,6 @@ int count_int(int n)
 
 	return (count + 1);
 }
-
-
 
 /**
  * args_c - prints the char passed to it

@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-
 int _printf(const char *format, ...);
 int args_c(char c);
 int args_s(char *s);

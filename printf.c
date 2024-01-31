@@ -39,5 +39,6 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
+    va_end(arg_list);
 	return (word_count);
 }
